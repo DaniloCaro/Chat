@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
     res.sendFile(`${__dirname}/Cliente/index.html`)
 })
 
-const PORT = process.env.PORT || 3000;
-server.listen(3000), () => {
+let port = process.env.PORT || 8080;
+server.listen(8080), () => {
     console.log('Server is running on port 3000')
 }
