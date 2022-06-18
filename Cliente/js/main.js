@@ -30,6 +30,16 @@ socket.on('chat', (msg) => {
 
 function usernameFunction() {
     const username = document.getElementById('input-username').value;
-
     return pUser.innerHTML = username;
 }
+
+//Animal aleatorio
+
+function animalAleatorio() {
+    const animal = ['Perro', 'Gato', 'Pez', 'Vaca', 'Caballo', 'Cocodrilo', 'Tortuga'];
+    const number = Math.random() * 100;
+    const animalRandom = animal[Math.floor(Math.random() * animal.length)];
+    return pUser.innerHTML = animalRandom + number.toFixed();
+}
+
+pUser.innerHTML = animalAleatorio();
